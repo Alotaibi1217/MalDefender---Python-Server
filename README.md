@@ -1,3 +1,5 @@
+# Maldefender - Python server
+
 Here on the server side, the PCAP file is input into an open-source network traffic feature extractor
 tool, provided by the Canadian Institute called the CICFlowMeter. The tool extracts the needed features from the
 PCAP and converts them into a CSV format. This is necessary to ensure that the ML model input has the same
