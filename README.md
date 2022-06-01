@@ -7,9 +7,7 @@ format as the dataset it has dealt with previously.
 Whenever the machine learning algorithm finishes classifying the network traffic, the result of classification
 will be sent to the application through OneSignal. It’s a service that enables push notifications on Android. The
 OneSignal will generate a unique ID for each client. Through the Rest API, the assigned unique ID in addition to
-the PCAP file is sent from the application to the server through POST. However, the server will receive the PCAP
-file through GET, from the webserver hosted on our server.
-
+the PCAP file is sent from the application to the server through POST.
 Moreover, the server will be able to handle multiple clients at the same time through threading. Whenever the
 server gets a new connection request from any application on any Android device, it will handle the new request by
 opening a new thread. This will allow multiple clients to access the application at the same time.
